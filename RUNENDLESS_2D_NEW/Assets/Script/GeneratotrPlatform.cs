@@ -31,6 +31,7 @@ public class GeneratotrPlatform : MonoBehaviour
             newPlatform.transform.position = transform.position;
             newPlatform.transform.rotation = transform.rotation;
             newPlatform.SetActive(true);
+            print("kkkkk");
             newPlatform.name = "new nha";
         }
     }

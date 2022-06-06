@@ -22,16 +22,17 @@ public class PoolingObject : MonoBehaviour
         for(int i =0;i<poolingObjects.Count;i++){
             if(!poolingObjects[i].activeInHierarchy){
                 poolingObjects[i].name = "uo";
+                print(i);
                 return poolingObjects[i];
             }
         }
 
-        GameObject poolingObj = (GameObject)Instantiate(poolingObject);
-        poolingObj.SetActive(false);
-        poolingObj.name="ua gi day troi";
-        poolingObjects.Add(poolingObj);
-        print(poolingObjects.Count);
-        return poolingObj;  
+        // GameObject poolingObj = (GameObject)Instantiate(poolingObject);
+        // poolingObj.SetActive(false);
+        // poolingObj.name="ua gi day troi";
+        // poolingObjects.Add(poolingObj);
+        // print(poolingObjects.Count);
+        return null;
     }
 
     // Update is called once per frame
